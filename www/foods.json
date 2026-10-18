@@ -1,0 +1,1946 @@
+[
+  {
+    "name": "Arroz blanco cocido",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¾ taza (130 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Fideos cocidos",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¾ taza (110 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Arroz integral cocido",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¾ taza (120 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Quinoa cocida",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¾ taza (110 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Choclo cocido",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¾ taza (130 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Arvejas frescas cocidas",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¾ taza",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Habas frescas cocidas",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¾ taza",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Mote de maíz cocido",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¾ taza (120 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Mote de trigo cocido",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¾ taza (100 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Palomitas de maíz",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "1½ taza (35 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Arroz blanco crudo",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¼ taza (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Arroz integral crudo",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¼ taza (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Fideos crudos",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "½ taza (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Quinoa cruda",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¼ taza o 4 cucharadas (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Cuscús crudo",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¼ taza (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Harina tostada",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "4 cucharadas o ¼ taza (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Harina de trigo",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "4 cucharadas o ¼ taza (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Maicena",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "4 cucharadas o ¼ taza (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Chuño",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "4 cucharadas o ¼ taza (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Tapioca",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "4 cucharadas o ¼ taza (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Chuchoca",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "3 cucharadas (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Sémola",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "3 cucharadas (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Papa",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "1 unidad regular (150 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Camote o yuca",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "½ taza (120 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Piñón",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¾ taza o 30 unidades (80 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Castaña",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "4 unidades (35 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Marraqueta",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "1 diente (50 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Hallulla",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "½ unidad grande o 1 pequeña (50 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Pan de molde blanco o integral",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "2–3 rebanadas (50–70 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Pan pita blanco o integral",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "1½ unidad (60 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Pan amasado",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "¼ unidad (35 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Pan pumpernickel",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "1¼ unidad (75 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Tortilla para tacos",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "1 unidad grande (50 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Galletas de agua o soda",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "7 unidades (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Galletas de chuño",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "5 unidades (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Galleta grande de arroz o maíz",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "5 unidades (35 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Galletas de salvado",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "5 unidades",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Cereal de desayuno sin azúcar",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "1 taza (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Avena",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "½ taza o 6 cucharadas (40 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Granola",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "⅓ taza (30 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Pipoca",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "6 cucharadas",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Barra de cereal con azúcar",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "1½ unidades",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Barra de cereal sin azúcar",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "2 unidades",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Panqueques saludables",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "2–3 unidades, según tamaño",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Queque casero",
+    "group": "Cereales, papas y leguminosas frescas",
+    "portion": "1 rebanada del ancho del dedo índice (90 g)",
+    "kcal": 140,
+    "p": 3,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Acelga cocida",
+    "group": "Verduras generales",
+    "portion": "½ taza (110 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Betarraga cocida",
+    "group": "Verduras generales",
+    "portion": "½ taza (90 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Espinaca cocida",
+    "group": "Verduras generales",
+    "portion": "½ taza (130 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Zanahoria cocida, trozos",
+    "group": "Verduras generales",
+    "portion": "½ taza (50 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Berenjena cocida",
+    "group": "Verduras generales",
+    "portion": "½ taza (100 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Repollitos de Bruselas cocidos",
+    "group": "Verduras generales",
+    "portion": "½ taza (100 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Poroto verde cocido",
+    "group": "Verduras generales",
+    "portion": "¾ taza (70 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Zanahoria cocida, porción de taza",
+    "group": "Verduras generales",
+    "portion": "1 taza (100 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Brócoli cocido",
+    "group": "Verduras generales",
+    "portion": "1 taza (100 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Coliflor cocida",
+    "group": "Verduras generales",
+    "portion": "1 taza (110 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Zapallito italiano cocido",
+    "group": "Verduras generales",
+    "portion": "1 taza (150 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Salsa de tomate",
+    "group": "Verduras generales",
+    "portion": "2 cucharadas (30 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Alcachofa",
+    "group": "Verduras generales",
+    "portion": "1 unidad (50 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Espárragos",
+    "group": "Verduras generales",
+    "portion": "5 unidades regulares (100 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Champiñones cocidos",
+    "group": "Verduras generales",
+    "portion": "¾ taza (100 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Zanahoria cruda",
+    "group": "Verduras generales",
+    "portion": "1 taza (50 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Pepinillos o pickles",
+    "group": "Verduras generales",
+    "portion": "3 unidades (120 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Cebolla cruda",
+    "group": "Verduras generales",
+    "portion": "¾ taza (60 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Champiñones crudos",
+    "group": "Verduras generales",
+    "portion": "1½ taza (100 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Zapallo crudo",
+    "group": "Verduras generales",
+    "portion": "½ taza (70 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Betarraga cruda",
+    "group": "Verduras generales",
+    "portion": "1 taza (130 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Tomate",
+    "group": "Verduras generales",
+    "portion": "1 unidad (120 g)",
+    "kcal": 25,
+    "p": 2,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Pimentón",
+    "group": "Verduras de libre consumo",
+    "portion": "½ taza (60 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Acelga cruda",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza (50 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Achicoria",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza (50 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Apio",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza (70 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Cochayuyo",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Endivia",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza (50 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Espinaca cruda",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza (50 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Lechuga",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza (50 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Repollo",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza (50 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Ulte",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Zapallo italiano crudo",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza (100 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Kale",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza (50 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Berro",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza (50 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Puerro",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Rúcula",
+    "group": "Verduras de libre consumo",
+    "portion": "1 taza (50 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Rabanito",
+    "group": "Verduras de libre consumo",
+    "portion": "5 unidades (50 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Cebollín",
+    "group": "Verduras de libre consumo",
+    "portion": "½ unidad (30 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Pepino de ensalada",
+    "group": "Verduras de libre consumo",
+    "portion": "½ unidad (100 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Albahaca fresca",
+    "group": "Verduras de libre consumo",
+    "portion": "2½ cucharadas (50 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Luche",
+    "group": "Verduras de libre consumo",
+    "portion": "2 tazas",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Perejil",
+    "group": "Verduras de libre consumo",
+    "portion": "3 cucharadas (30 g)",
+    "kcal": 10,
+    "p": 0,
+    "c": 2.5,
+    "f": 0
+  },
+  {
+    "name": "Chirimoya",
+    "group": "Frutas",
+    "portion": "¼ unidad (90 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Plátano",
+    "group": "Frutas",
+    "portion": "1 pequeño o ½ grande (60 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Caqui",
+    "group": "Frutas",
+    "portion": "1 unidad regular (90 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Durazno",
+    "group": "Frutas",
+    "portion": "1 unidad regular (130 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Manzana",
+    "group": "Frutas",
+    "portion": "1 unidad regular (100 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Membrillo",
+    "group": "Frutas",
+    "portion": "1 unidad regular (100 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Pepino dulce",
+    "group": "Frutas",
+    "portion": "1 unidad regular (240 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Pomelo",
+    "group": "Frutas",
+    "portion": "1 unidad regular (200 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Naranja",
+    "group": "Frutas",
+    "portion": "1 unidad regular (120 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Pera",
+    "group": "Frutas",
+    "portion": "1 unidad regular (100 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Guayaba",
+    "group": "Frutas",
+    "portion": "1 unidad regular (100 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Higos frescos",
+    "group": "Frutas",
+    "portion": "2 unidades (80 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Kiwi",
+    "group": "Frutas",
+    "portion": "2 unidades (100 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Tunas",
+    "group": "Frutas",
+    "portion": "2 unidades (150 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Mandarinas",
+    "group": "Frutas",
+    "portion": "2 unidades (180 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Mora",
+    "group": "Frutas",
+    "portion": "½ taza (120 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Grosella",
+    "group": "Frutas",
+    "portion": "½ taza (120 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Arándanos",
+    "group": "Frutas",
+    "portion": "½ taza (120 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Mango",
+    "group": "Frutas",
+    "portion": "½ taza (90 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Níspero",
+    "group": "Frutas",
+    "portion": "7 unidades (120 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Piña",
+    "group": "Frutas",
+    "portion": "¾ taza (120 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Ciruelas",
+    "group": "Frutas",
+    "portion": "3 unidades (110 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Papaya",
+    "group": "Frutas",
+    "portion": "3 porciones/unidades según documento (400 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Damasco",
+    "group": "Frutas",
+    "portion": "3 unidades (120 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Granada",
+    "group": "Frutas",
+    "portion": "½ unidad (70 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Frambuesa",
+    "group": "Frutas",
+    "portion": "1 taza (130 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Melón",
+    "group": "Frutas",
+    "portion": "1 taza (180 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Sandía",
+    "group": "Frutas",
+    "portion": "1¼ taza (200 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Frutilla entera",
+    "group": "Frutas",
+    "portion": "1½ taza (200 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Cerezas",
+    "group": "Frutas",
+    "portion": "15 unidades (90 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Uvas",
+    "group": "Frutas",
+    "portion": "10 unidades o ½ taza (90 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Jugo natural de fruta, naranja, limón o pomelo",
+    "group": "Frutas",
+    "portion": "¾ taza (150 cc)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Fruta desecada, general",
+    "group": "Frutas",
+    "portion": "7 rodajas",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Higo seco",
+    "group": "Frutas",
+    "portion": "2 unidades (25 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Huesillo",
+    "group": "Frutas",
+    "portion": "1 unidad (30 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Ciruelas secas",
+    "group": "Frutas",
+    "portion": "3 unidades (30 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Damascos secos",
+    "group": "Frutas",
+    "portion": "3 unidades (30 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Pasas",
+    "group": "Frutas",
+    "portion": "20 unidades (20 g)",
+    "kcal": 65,
+    "p": 1,
+    "c": 15,
+    "f": 0
+  },
+  {
+    "name": "Leche líquida semidescremada",
+    "group": "Lácteos semidescremados",
+    "portion": "1 taza",
+    "kcal": 85,
+    "p": 5,
+    "c": 9,
+    "f": 3
+  },
+  {
+    "name": "Leche en polvo 18% o 12% materia grasa",
+    "group": "Lácteos semidescremados",
+    "portion": "2 cucharadas colmadas (20 g)",
+    "kcal": 85,
+    "p": 5,
+    "c": 9,
+    "f": 3
+  },
+  {
+    "name": "Yogurt natural",
+    "group": "Lácteos semidescremados",
+    "portion": "1 unidad (110–125 g)",
+    "kcal": 85,
+    "p": 5,
+    "c": 9,
+    "f": 3
+  },
+  {
+    "name": "Yogurt griego natural",
+    "group": "Lácteos semidescremados",
+    "portion": "1 unidad (110–125 g)",
+    "kcal": 85,
+    "p": 5,
+    "c": 9,
+    "f": 3
+  },
+  {
+    "name": "Quesillo o queso fresco light",
+    "group": "Lácteos semidescremados",
+    "portion": "1 rebanada de 3 cm (60 g)",
+    "kcal": 85,
+    "p": 5,
+    "c": 9,
+    "f": 3
+  },
+  {
+    "name": "Ricota light",
+    "group": "Lácteos semidescremados",
+    "portion": "3 cucharadas (65 g)",
+    "kcal": 85,
+    "p": 5,
+    "c": 9,
+    "f": 3
+  },
+  {
+    "name": "Queso cottage",
+    "group": "Lácteos semidescremados",
+    "portion": "4 cucharadas (80 g)",
+    "kcal": 85,
+    "p": 5,
+    "c": 9,
+    "f": 3
+  },
+  {
+    "name": "Leche líquida descremada",
+    "group": "Lácteos descremados",
+    "portion": "1 taza (200 cc)",
+    "kcal": 70,
+    "p": 7,
+    "c": 10,
+    "f": 0
+  },
+  {
+    "name": "Leche cultivada sin azúcar",
+    "group": "Lácteos descremados",
+    "portion": "1 taza (200 cc)",
+    "kcal": 70,
+    "p": 7,
+    "c": 10,
+    "f": 0
+  },
+  {
+    "name": "Leche en polvo 2% materia grasa",
+    "group": "Lácteos descremados",
+    "portion": "2 cucharadas colmadas (20 g)",
+    "kcal": 70,
+    "p": 7,
+    "c": 10,
+    "f": 0
+  },
+  {
+    "name": "Yogurt descremado sin azúcar",
+    "group": "Lácteos descremados",
+    "portion": "1 unidad (125 g)",
+    "kcal": 70,
+    "p": 7,
+    "c": 10,
+    "f": 0
+  },
+  {
+    "name": "Quesillo light",
+    "group": "Lácteos descremados",
+    "portion": "1 trozo de 4 cm (90 g)",
+    "kcal": 70,
+    "p": 7,
+    "c": 10,
+    "f": 0
+  },
+  {
+    "name": "Vacuno: abastero",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Vacuno: filete",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Vacuno: asiento picana",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Vacuno: lomo liso",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Vacuno: pollo ganso",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Vacuno: posta negra",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Vacuno: posta rosada",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Vacuno: punta paleta",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Vacuno: entraña",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Vacuno: tártaro",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Pollo (truto o pechuga)",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Pavo (truto o pechuga)",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Proteína vegetal de soya texturizada",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "2½ cucharadas (25 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Tofu o seitán",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "½ taza (50 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Jamón de pavo cocido o asado",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "3 rebanadas (60 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Huevo entero",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 unidad (75 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Clara de huevo",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "3 unidades",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Huevo de codorniz",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "2 unidades (25 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Pejerrey",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (80 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Corvina",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (80 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Congrio",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (80 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Merluza",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (80 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Jurel",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (80 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Salmón",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (80 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Reineta",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (80 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Lenguado",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (80 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Pejegallo",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (80 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Tilapia",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo tamaño palma (80 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Atún al agua",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "½ lata o ⅓ taza (60 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Jurel al agua",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 trozo o ⅓ taza (60 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Camarón",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "20 unidades (120 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Cholga",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "8 unidades (80 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Choritos",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "8 unidades (60 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Navajuela o almejas",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "7 unidades (70 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Ostras",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "6 unidades (60 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Jaiba",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "3 cucharadas (60 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Piures",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "12 unidades (120 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Locos",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "1 unidad (60 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Gambas",
+    "group": "Carnes, pescados, huevos y proteínas bajas en grasa",
+    "portion": "15 unidades (75 g)",
+    "kcal": 65,
+    "p": 11,
+    "c": 1,
+    "f": 2
+  },
+  {
+    "name": "Arvejas cocidas",
+    "group": "Legumbres secas",
+    "portion": "¾ taza (140 g)",
+    "kcal": 170,
+    "p": 11,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Garbanzos cocidos",
+    "group": "Legumbres secas",
+    "portion": "¾ taza (140 g)",
+    "kcal": 170,
+    "p": 11,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Habas cocidas",
+    "group": "Legumbres secas",
+    "portion": "¾ taza (140 g)",
+    "kcal": 170,
+    "p": 11,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Porotos cocidos",
+    "group": "Legumbres secas",
+    "portion": "¾ taza (140 g)",
+    "kcal": 170,
+    "p": 11,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Lentejas cocidas",
+    "group": "Legumbres secas",
+    "portion": "¾ taza (140 g)",
+    "kcal": 170,
+    "p": 11,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Habas crudas",
+    "group": "Legumbres secas",
+    "portion": "¼ taza (50 g)",
+    "kcal": 170,
+    "p": 11,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Lentejas crudas",
+    "group": "Legumbres secas",
+    "portion": "¼ taza (50 g)",
+    "kcal": 170,
+    "p": 11,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Arvejas secas crudas",
+    "group": "Legumbres secas",
+    "portion": "¼ taza (50 g)",
+    "kcal": 170,
+    "p": 11,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Porotos crudos",
+    "group": "Legumbres secas",
+    "portion": "¼ taza (50 g)",
+    "kcal": 170,
+    "p": 11,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Garbanzos crudos",
+    "group": "Legumbres secas",
+    "portion": "¼ taza (50 g)",
+    "kcal": 170,
+    "p": 11,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Harina cruda o precocida de legumbres",
+    "group": "Legumbres secas",
+    "portion": "⅓ taza (50 g)",
+    "kcal": 170,
+    "p": 11,
+    "c": 30,
+    "f": 1
+  },
+  {
+    "name": "Mantequilla",
+    "group": "Grasas principalmente saturadas",
+    "portion": "1 cucharadita (6 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Crema de leche baja en grasas",
+    "group": "Grasas principalmente saturadas",
+    "portion": "3 cucharaditas (13 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Mayonesa",
+    "group": "Grasas principalmente saturadas",
+    "portion": "1 cucharada (12 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Tocino",
+    "group": "Grasas principalmente saturadas",
+    "portion": "1 rebanada (8 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Palta",
+    "group": "Grasas principalmente monoinsaturadas",
+    "portion": "2 cucharadas o ¼ unidad (30 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Aceitunas sin cuesco",
+    "group": "Grasas principalmente monoinsaturadas",
+    "portion": "7 unidades (30 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Almendras",
+    "group": "Grasas principalmente monoinsaturadas",
+    "portion": "6 unidades (6 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Avellanas chilenas",
+    "group": "Grasas principalmente monoinsaturadas",
+    "portion": "7 unidades (5 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Avellana europea",
+    "group": "Grasas principalmente monoinsaturadas",
+    "portion": "3 unidades (9 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Maní",
+    "group": "Grasas principalmente monoinsaturadas",
+    "portion": "8 unidades (8 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Pistachos",
+    "group": "Grasas principalmente monoinsaturadas",
+    "portion": "10 unidades (8 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Castañas de cajú",
+    "group": "Grasas principalmente monoinsaturadas",
+    "portion": "3 unidades (7,5 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Margarina",
+    "group": "Grasas principalmente poliinsaturadas",
+    "portion": "1 cucharadita (6 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Margarina diet",
+    "group": "Grasas principalmente poliinsaturadas",
+    "portion": "2 cucharaditas (15 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Mayonesa light",
+    "group": "Grasas principalmente poliinsaturadas",
+    "portion": "1½ cucharadas (18 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Nuez",
+    "group": "Grasas principalmente poliinsaturadas",
+    "portion": "1½ unidades enteras o 3 mariposas (7,5 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Semillas de sésamo, chía, linaza, maravilla o amapola",
+    "group": "Grasas principalmente poliinsaturadas",
+    "portion": "1 cucharada (12 g)",
+    "kcal": 45,
+    "p": 0,
+    "c": 0,
+    "f": 5
+  },
+  {
+    "name": "Azúcar",
+    "group": "Azúcares",
+    "portion": "1 cucharadita (5 g)",
+    "kcal": 20,
+    "p": 0,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Miel de abeja",
+    "group": "Azúcares",
+    "portion": "medida no especificada en el documento",
+    "kcal": 20,
+    "p": 0,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Miel de palma",
+    "group": "Azúcares",
+    "portion": "medida no especificada en el documento",
+    "kcal": 20,
+    "p": 0,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Mermelada",
+    "group": "Azúcares",
+    "portion": "medida no especificada en el documento",
+    "kcal": 20,
+    "p": 0,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Dulce de membrillo",
+    "group": "Azúcares",
+    "portion": "1 cucharadita (8 g)",
+    "kcal": 20,
+    "p": 0,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Manjar",
+    "group": "Azúcares",
+    "portion": "¾ cucharadita (7,5 g)",
+    "kcal": 20,
+    "p": 0,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Cacao amargo",
+    "group": "Azúcares",
+    "portion": "1 cucharadita (10 g)",
+    "kcal": 20,
+    "p": 0,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Jalea en polvo",
+    "group": "Azúcares",
+    "portion": "1 cucharadita de polvo (7 g)",
+    "kcal": 20,
+    "p": 0,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Leche condensada",
+    "group": "Azúcares",
+    "portion": "1 cucharadita (7 g)",
+    "kcal": 20,
+    "p": 0,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Néctar promedio light",
+    "group": "Azúcares",
+    "portion": "½ taza (100 cc)",
+    "kcal": 20,
+    "p": 0,
+    "c": 5,
+    "f": 0
+  },
+  {
+    "name": "Helado de agua promedio",
+    "group": "Azúcares",
+    "portion": "⅓ paleta (80 cc)",
+    "kcal": 20,
+    "p": 0,
+    "c": 5,
+    "f": 0
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "name": "Mi Nutrición",
+  "short_name": "Nutrición",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f7f2",
+  "theme_color": "#173d35"
+}

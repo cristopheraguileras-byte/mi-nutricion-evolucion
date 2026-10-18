@@ -1,11 +1,10 @@
-
 {
   "name": "mi-nutricion-evolucion",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Aplicación personal de seguimiento nutricional y hábitos",
+  "description": "Mi Nutrición: equivalencias, seguimiento diario y motivación",
   "scripts": {
-    "build": "echo Aplicacion web lista para Capacitor"
+    "build": "echo Aplicacion lista para Capacitor"
   },
   "dependencies": {
     "@capacitor/core": "^7.4.3",
