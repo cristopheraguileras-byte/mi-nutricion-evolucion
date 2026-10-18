@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#173d35">
+<meta name="description" content="Registro personal de alimentación y nutrición deportiva">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>Mi Nutrición</title>
+<style>
+:root{--green:#173d35;--mint:#dcebe1;--paper:#f7f7f2;--ink:#20302b;--muted:#6d7973;--line:#e1e7e1;--pink:#ead8e3;--orange:#f3dfb8}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
+header{background:var(--green);color:white;padding:22px 18px 18px;border-radius:0 0 24px 24px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-size:23px;font-weight:800;letter-spacing:-.5px}.sub{color:#d7e6dc;font-size:13px;margin-top:3px}
+main{max-width:760px;margin:auto;padding:16px 14px 90px}.date-row{display:flex;justify-content:space-between;align-items:center;margin:0 2px 12px;gap:10px}
+h2{font-size:18px;margin:0 0 12px}h3{font-size:16px;margin:0 0 8px}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:14px;box-shadow:0 3px 12px #1c352008}
+.kcal{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}.kcal strong{font-size:34px;letter-spacing:-1px}.muted{color:var(--muted);font-size:13px}
+.progress{height:9px;background:#e8eee9;border-radius:9px;overflow:hidden;margin:12px 0}.progress span{display:block;height:100%;background:#75aa88;width:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:#f4f7f2;border-radius:12px;padding:11px}.stat b{display:block;font-size:18px}.stat small{font-size:11px;color:var(--muted)}
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:14px}.tab{border:0;border-radius:12px;padding:10px 3px;background:#e9eee8;color:var(--green);font-weight:700;font-size:12px}.tab.active{background:var(--green);color:white}
+button,input,select{font:inherit}button{cursor:pointer}.primary{background:var(--green);color:white;border:0;border-radius:12px;padding:12px 15px;font-weight:700}.secondary{background:#edf3ed;color:var(--green);border:0;border-radius:12px;padding:10px 12px;font-weight:700}.full{width:100%}
+.meal{border:1px solid var(--line);border-radius:14px;padding:13px;margin:10px 0;background:white}.meal-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.meal-items{font-size:13px;color:var(--muted);margin:7px 0}.meal-foot{display:flex;justify-content:space-between;align-items:center;font-size:12px}
+label{display:block;font-size:13px;font-weight:700;margin:10px 0 5px}input,select{width:100%;padding:11px;border:1px solid #d8e0d8;border-radius:10px;background:white;color:var(--ink)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.foodrow{display:flex;gap:10px;align-items:center;border-bottom:1px solid var(--line);padding:10px 0}.foodrow:last-child{border:0}.foodrow .grow{flex:1}.pill{font-size:11px;background:#edf3ed;padding:4px 7px;border-radius:8px;color:#355c49;white-space:nowrap}
+.notice{background:#fff6e6;border:1px solid #f0dfbd;border-radius:12px;padding:12px;font-size:12px;color:#68522a}
+.bottomnav{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;justify-content:center;gap:5px;padding:8px 8px calc(8px + env(safe-area-inset-bottom));z-index:4}
+.bottomnav button{flex:1;max-width:180px;border:0;background:transparent;color:var(--muted);padding:8px 3px;font-size:11px;font-weight:700}.bottomnav button.active{color:var(--green)}
+.hidden{display:none!important}.empty{color:var(--muted);font-size:13px;padding:12px 0}
+@media(min-width:650px){main{padding-top:22px}.tabs{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<header>
+ <div class="top"><div><div class="brand">🌿 Mi Nutrición</div><div class="sub">Tu plan, tus registros, tu progreso</div></div><div style="font-size:28px">⛰️</div></div>
+</header>
+<main>
+ <div class="date-row"><div><div class="muted">REGISTRO DEL DÍA</div><strong id="prettyDate"></strong></div><input aria-label="Fecha de registro" id="dateInput" type="date" style="width:auto;max-width:150px"></div>
+ <nav class="tabs" aria-label="Secciones">
+  <button class="tab active" data-tab="hoy">Hoy</button><button class="tab" data-tab="agregar">Agregar</button><button class="tab" data-tab="plan">Mi pauta</button><button class="tab" data-tab="historial">Historial</button>
+ </nav>
+ <section id="hoy">
+  <div class="card">
+   <div class="muted">ENERGÍA REGISTRADA</div><div class="kcal"><strong id="totalKcal">0</strong><span class="muted">kcal registradas</span></div>
+   <div class="progress"><span id="kcalBar"></span></div>
+   <div class="stats"><div class="stat"><b id="totalP">0 g</b><small>Proteínas*</small></div><div class="stat"><b id="totalC">0 g</b><small>Carbohidratos*</small></div><div class="stat"><b id="totalG">0 g</b><small>Lípidos*</small></div></div>
+   <p class="muted">*Suma estimada solo cuando la tabla de equivalencias aporta esos datos.</p>
+  </div>
+  <div class="card"><h2>Lo que he consumido</h2><div id="mealList"></div><button class="primary full" onclick="showTab('agregar')">+ Registrar alimento</button></div>
+  <div class="notice">Esta primera versión registra datos de forma local en este dispositivo. No borres los datos del navegador sin exportar una copia. Los objetivos calóricos aún no están configurados.</div>
+ </section>
+ <section id="agregar" class="hidden">
+  <div class="card"><h2>Registrar alimento</h2>
+   <label for="mealSelect">Comida</label><select id="mealSelect"><option>Desayuno</option><option>Colación preentrenamiento</option><option>Almuerzo</option><option>Colación postentrenamiento</option><option>Once/Cena</option><option>Colación nocturna</option><option>Durante carrera</option><option>Después de carrera</option><option>Otro</option></select>
+   <label for="foodSearch">Buscar alimento por nombre o grupo</label><input id="foodSearch" placeholder="Ej. avena, fruta, lácteos..." oninput="renderFoodChoices()">
+   <div id="foodChoices"></div>
+   <div id="customForm" class="hidden">
+    <h3 id="chosenName"></h3><div class="muted" id="chosenInfo"></div>
+    <div class="row"><div><label for="qty">Cantidad de porciones</label><input id="qty" type="number" min="0.25" step="0.25" value="1"></div><div><label for="dateNote">Nota (opcional)</label><input id="dateNote" placeholder="Ej. cocido, marca..."></div></div>
+    <button class="primary full" style="margin-top:12px" onclick="saveFood()">Guardar consumo</button>
+   </div>
+   <div class="divider"></div>
+   <h3>¿No aparece en la lista?</h3><p class="muted">Puedes añadirlo como alimento personalizado. Los datos nutricionales se deben confirmar con la etiqueta o tu profesional.</p>
+   <label for="customName">Nombre del alimento</label><input id="customName" placeholder="Ej. barra energética marca...">
+   <div class="row"><div><label for="customKcal">Calorías por unidad/porción</label><input id="customKcal" type="number" min="0" placeholder="Opcional"></div><div><label for="customCarbs">Carbohidratos (g)</label><input id="customCarbs" type="number" min="0" placeholder="Opcional"></div></div>
+   <button class="secondary full" onclick="saveCustom()">Guardar alimento personalizado</button>
+  </div>
+ </section>
+ <section id="plan" class="hidden">
+  <div class="card"><h2>Mi pauta de referencia</h2><p class="muted">Estructura transcrita de tu pauta deportiva. Es una guía para registrar, no una nueva prescripción.</p>
+   <div class="meal"><b>Día con entrenamiento</b><div class="meal-items">09:30 Desayuno: ½ cereal + 2 proteínas + 1 lácteo.<br>13:00 Almuerzo: 1 cereal + 2 proteínas + verduras.<br>16:00 Colación preentreno: fruta o compota.<br>Postentreno: 1 lácteo.<br>20:00 Once/cena: 1 cereal + 2 proteínas + verduras.<br>Colación nocturna: 1 lácteo.</div></div>
+   <div class="meal"><b>Día sin entrenamiento</b><div class="meal-items">09:30 Desayuno; 13:00 almuerzo; 16:30 colación (fruta o lácteo); 20:00 once/cena; colación nocturna (1 lácteo), según las opciones de tu documento.</div></div>
+   <div class="meal"><b>Día de fondo (según tu pauta)</b><div class="meal-items">Cambiar desayuno por 2 rebanadas de pan de molde + 4 cucharadas de mermelada + café (puede incluir leche, yogur o bebida vegetal). Durante entrenamiento mayor a 10 km: 1 compota de frutas. Postentreno mayor a 10 km: 1 batido de proteína.</div></div>
+   <div class="notice">La pauta original tiene fecha de evaluación 09/04/2024 y próximo control 10/05/2024. Confirma con tu nutricionista si sigue vigente antes de usarla como objetivo actual.</div>
+  </div>
+ </section>
+ <section id="historial" class="hidden">
+  <div class="card"><h2>Historial guardado</h2><p class="muted">Consulta registros por fecha y exporta una copia de seguridad.</p><label for="historyDate">Elegir fecha</label><input type="date" id="historyDate"><div id="historySummary" style="margin-top:12px"></div><button class="secondary full" onclick="exportData()" style="margin-top:12px">Exportar copia de seguridad (JSON)</button><label for="importFile">Restaurar copia de seguridad</label><input id="importFile" type="file" accept=".json,application/json" onchange="importData(event)"></div>
+ </section>
+</main>
+<nav class="bottomnav"><button class="active" data-tab="hoy">⌂<br>Hoy</button><button data-tab="agregar">＋<br>Registrar</button><button data-tab="plan">▤<br>Mi pauta</button><button data-tab="historial">▥<br>Historial</button></nav>
+<script>
+const foods = [
+ {name:"Arroz, fideos o quinoa cocidos",group:"Cereales",portion:"¾ taza (aprox. 110–130 g cocidos)",kcal:140,p:3,c:30,f:1},
+ {name:"Avena",group:"Cereales",portion:"½ taza o 6 cucharadas (40 g)",kcal:140,p:3,c:30,f:1,note:"Equivalencia general de cereales del documento"},
+ {name:"Pan molde blanco o integral",group:"Cereales",portion:"2–3 rebanadas (50–70 g)",kcal:140,p:3,c:30,f:1},
+ {name:"Papa",group:"Cereales",portion:"1 unidad regular (150 g)",kcal:140,p:3,c:30,f:1},
+ {name:"Legumbres cocidas",group:"Legumbres",portion:"¾ taza (140 g)",kcal:170,p:11,c:30,f:1},
+ {name:"Pollo o pavo",group:"Proteínas",portion:"50 g (1 porción)",kcal:65,p:11,c:1,f:2},
+ {name:"Vacuno magro",group:"Proteínas",portion:"50 g (1 porción)",kcal:65,p:11,c:1,f:2},
+ {name:"Pescado",group:"Proteínas",portion:"80 g (1 porción)",kcal:65,p:11,c:1,f:2},
+ {name:"Atún al agua",group:"Proteínas",portion:"½ lata o ⅓ taza (60 g)",kcal:65,p:11,c:1,f:2},
+ {name:"Huevo entero",group:"Proteínas",portion:"1 unidad (75 g)",kcal:65,p:11,c:1,f:2},
+ {name:"Yogur descremado sin azúcar",group:"Lácteos",portion:"1 unidad (125 g)",kcal:70,p:7,c:10,f:0},
+ {name:"Leche descremada",group:"Lácteos",portion:"1 taza (200 cc)",kcal:70,p:7,c:10,f:0},
+ {name:"Leche semidescremada",group:"Lácteos",portion:"1 taza",kcal:85,p:5,c:9,f:3},
+ {name:"Manzana",group:"Frutas",portion:"1 unidad regular (100 g)",kcal:65,p:1,c:15,f:0},
+ {name:"Plátano",group:"Frutas",portion:"1 pequeño o ½ grande (60 g)",kcal:65,p:1,c:15,f:0},
+ {name:"Frutillas",group:"Frutas",portion:"1½ taza (200 g)",kcal:65,p:1,c:15,f:0},
+ {name:"Naranja",group:"Frutas",portion:"1 unidad regular (120 g)",kcal:65,p:1,c:15,f:0},
+ {name:"Brócoli, zanahoria o coliflor",group:"Verduras",portion:"1 taza según alimento y preparación",kcal:25,p:2,c:5,f:0},
+ {name:"Tomate",group:"Verduras",portion:"1 unidad (120 g)",kcal:25,p:2,c:5,f:0},
+ {name:"Verduras de libre consumo",group:"Verduras",portion:"1 taza (según listado de tu tabla)",kcal:10,p:0,c:2.5,f:0},
+ {name:"Palta",group:"Grasas",portion:"2 cucharadas o ¼ unidad (30 g)",kcal:45,p:0,c:0,f:5},
+ {name:"Almendras",group:"Grasas",portion:"6 unidades (6 g)",kcal:45,p:0,c:0,f:5},
+ {name:"Mermelada",group:"Azúcares",portion:"1 cucharadita (5 g)",kcal:20,p:0,c:5,f:0},
+ {name:"Miel",group:"Azúcares",portion:"1 cucharadita (5 g)",kcal:20,p:0,c:5,f:0}
+];
+let chosen=null;
+const todayISO=()=>{let d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
+let selectedDate=todayISO();
+let db=JSON.parse(localStorage.getItem("miNutricionData")||'{"entries":{},"customFoods":[]}');
+function persist(){localStorage.setItem("miNutricionData",JSON.stringify(db))}
+function fmt(n){return Math.round(n*10)/10}
+function dateLabel(s){if(!s)return "";return new Date(s+"T12:00:00").toLocaleDateString('es-CL',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}
+function entries(){return db.entries[selectedDate]||[]}
+function showTab(id){document.querySelectorAll("main section").forEach(s=>s.classList.toggle("hidden",s.id!==id));document.querySelectorAll("[data-tab]").forEach(b=>b.classList.toggle("active",b.dataset.tab===id));if(id==="agregar")renderFoodChoices();if(id==="hoy")renderToday();if(id==="historial")renderHistory()}
+document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tab)));
+function renderToday(){
+ document.getElementById("prettyDate").textContent=dateLabel(selectedDate);
+ let list=entries(), totals=list.reduce((a,e)=>{a.kcal+=e.kcal*e.qty;a.p+=e.p*e.qty;a.c+=e.c*e.qty;a.f+=e.f*e.qty;return a},{kcal:0,p:0,c:0,f:0});
+ document.getElementById("totalKcal").textContent=fmt(totals.kcal);document.getElementById("totalP").textContent=fmt(totals.p)+" g";document.getElementById("totalC").textContent=fmt(totals.c)+" g";document.getElementById("totalG").textContent=fmt(totals.f)+" g";
+ document.getElementById("kcalBar").style.width="0%";
+ let groups={};list.forEach((e,i)=>{(groups[e.meal]??=[]).push({...e,index:i})});
+ let out=Object.keys(groups).length?Object.entries(groups).map(([meal,arr])=>`<div class="meal"><div class="meal-head"><b>${esc(meal)}</b><span class="pill">${fmt(arr.reduce((a,e)=>a+e.kcal*e.qty,0))} kcal</span></div>${arr.map(e=>`<div class="foodrow"><div class="grow"><b>${esc(e.name)}</b><div class="muted">${fmt(e.qty)} porción(es) · ${esc(e.portion)}</div></div><button class="secondary" aria-label="Eliminar ${esc(e.name)}" onclick="removeEntry(${e.index})">×</button></div>`).join("")}</div>`).join(""):'<div class="empty">Aún no has registrado alimentos para este día.</div>';
+ document.getElementById("mealList").innerHTML=out;
+}
+function renderFoodChoices(){
+ const q=(document.getElementById("foodSearch").value||"").toLowerCase();
+ const all=[...foods,...db.customFoods];
+ const filtered=all.filter(f=>(f.name+" "+f.group).toLowerCase().includes(q));
+ document.getElementById("foodChoices").innerHTML=filtered.map((f,i)=>`<div class="foodrow"><div class="grow"><b>${esc(f.name)}</b><div class="muted">${esc(f.group)} · ${esc(f.portion)}</div><span class="pill">${f.kcal==null?"kcal por confirmar":f.kcal+" kcal / porción"}</span></div><button class="secondary" onclick="chooseFood(${foods.length+db.customFoods.indexOf(f)})">Elegir</button></div>`).join("")||'<div class="empty">No hay coincidencias. Puedes añadirlo como alimento personalizado.</div>';
+}
+function chooseFood(i){const all=[...foods,...db.customFoods];chosen=all[i];document.getElementById("customForm").classList.remove("hidden");document.getElementById("chosenName").textContent=chosen.name;document.getElementById("chosenInfo").textContent=chosen.group+" · "+chosen.portion+" · "+(chosen.kcal==null?"calorías por confirmar":chosen.kcal+" kcal por porción");document.getElementById("qty").value=1;document.getElementById("dateNote").value="";document.getElementById("customForm").scrollIntoView({behavior:"smooth",block:"nearest"})}
+function saveFood(){if(!chosen)return;let qty=Number(document.getElementById("qty").value);if(!qty||qty<=0){alert("Ingresa una cantidad válida.");return}let e={name:chosen.name,group:chosen.group,portion:chosen.portion,qty,meal:document.getElementById("mealSelect").value,kcal:Number(chosen.kcal)||0,p:Number(chosen.p)||0,c:Number(chosen.c)||0,f:Number(chosen.f)||0,note:document.getElementById("dateNote").value,unknown:chosen.kcal==null};db.entries[selectedDate]??=[];db.entries[selectedDate].push(e);persist();document.getElementById("customForm").classList.add("hidden");chosen=null;document.getElementById("foodSearch").value="";renderToday();showTab("hoy")}
+function removeEntry(i){if(confirm("¿Eliminar este registro?")){db.entries[selectedDate].splice(i,1);persist();renderToday()}}
+function saveCustom(){let name=document.getElementById("customName").value.trim();if(!name){alert("Escribe el nombre del alimento.");return}let k=document.getElementById("customKcal").value;let c=document.getElementById("customCarbs").value;db.customFoods.push({name,group:"Personalizado",portion:"1 unidad/porción (define la cantidad)",kcal:k===""?null:Number(k),p:0,c:c===""?0:Number(c),f:0});persist();document.getElementById("customName").value="";document.getElementById("customKcal").value="";document.getElementById("customCarbs").value="";renderFoodChoices();alert("Alimento guardado. Completa o confirma sus datos nutricionales antes de usarlo como referencia exacta.")}
+function renderHistory(){let d=document.getElementById("historyDate").value||selectedDate;let arr=db.entries[d]||[];let kcal=arr.reduce((s,e)=>s+e.kcal*e.qty,0);document.getElementById("historySummary").innerHTML=`<div class="stat"><b>${fmt(kcal)} kcal</b><small>${arr.length} registros · ${esc(dateLabel(d))}</small></div>`+(arr.length?arr.map(e=>`<div class="foodrow"><div class="grow"><b>${esc(e.name)}</b><div class="muted">${esc(e.meal)} · ${fmt(e.qty)} porción(es)</div></div><span class="pill">${fmt(e.kcal*e.qty)} kcal</span></div>`).join(""):'<p class="empty">No hay registros para esta fecha.</p>')}
+function exportData(){let blob=new Blob([JSON.stringify(db,null,2)],{type:"application/json"});let a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="mi-nutricion-respaldo-"+todayISO()+".json";a.click();URL.revokeObjectURL(a.href)}
+function importData(ev){let f=ev.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result);if(!x.entries)throw Error();db=x;persist();renderToday();renderHistory();alert("Respaldo restaurado.")}catch(e){alert("No se pudo leer el archivo de respaldo.")}};r.readAsText(f)}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+document.getElementById("dateInput").value=selectedDate;document.getElementById("dateInput").addEventListener("change",e=>{selectedDate=e.target.value||todayISO();renderToday()});
+document.getElementById("historyDate").value=selectedDate;document.getElementById("historyDate").addEventListener("change",renderHistory);
+renderToday();renderFoodChoices();
+if("serviceWorker" in navigator && location.protocol!=="file:"){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}))}
+</script>
+</body></html>
