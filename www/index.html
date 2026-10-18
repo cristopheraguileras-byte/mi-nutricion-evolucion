@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#176b55">
+<title>Mi Nutrición</title>
+<style>
+:root{--green:#176b55;--light:#e9f5ef;--bg:#f5f8f6;--text:#20352d;--muted:#64756d;--white:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif}
+header{background:var(--green);color:white;padding:24px 18px 28px;border-radius:0 0 25px 25px}
+header h1{margin:0;font-size:25px}
+header p{margin:6px 0 0;opacity:.9}
+main{max-width:650px;margin:auto;padding:16px 14px 90px}
+.card{background:white;border-radius:18px;padding:17px;margin:12px 0;box-shadow:0 3px 15px #183c2910}
+h2{font-size:18px;margin:0 0 12px}
+h3{font-size:15px;margin:0 0 8px}
+p{line-height:1.45}
+.small{font-size:13px;color:var(--muted)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.stat{background:var(--light);border-radius:14px;padding:13px}
+.stat strong{display:block;font-size:23px}
+progress{width:100%;height:12px;accent-color:var(--green)}
+input,select,textarea{width:100%;padding:12px;border:1px solid #d8e2dc;border-radius:10px;font:inherit;background:white;margin:5px 0 10px}
+button{border:0;background:var(--green);color:white;padding:12px 15px;border-radius:11px;font:inherit;font-weight:650;cursor:pointer}
+button.secondary{background:var(--light);color:var(--green)}
+button.danger{background:#f9e9e7;color:#9d3a30}
+button:disabled{opacity:.5}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.food{padding:12px 0;border-bottom:1px solid #edf1ee}
+.food:last-child{border:0}
+nav{position:fixed;bottom:0;left:0;right:0;background:white;display:flex;justify-content:space-around;padding:10px 2px max(10px,env(safe-area-inset-bottom));box-shadow:0 -3px 15px #0000000b}
+nav button{background:transparent;color:var(--green);padding:9px 7px;font-size:12px}
+.hidden{display:none!important}
+.badge{display:inline-block;padding:5px 9px;background:var(--light);color:var(--green);border-radius:20px;font-size:12px;font-weight:700}
+</style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <div><h1>Mi Nutrición 🌱</h1><p>Pequeños pasos, grandes cambios.</p></div>
+    <span style="font-size:32px">🥑</span>
+  </div>
+</header>
+<main>
+<section id="inicio">
+  <div class="card">
+    <div class="row"><h2>Tu día de hoy</h2><span id="fecha" class="small"></span></div>
+    <div class="stats">
+      <div class="stat"><span class="small">Porciones registradas</span><strong id="porciones">0</strong></div>
+      <div class="stat"><span class="small">Cumplimiento</span><strong id="porcentaje">0%</strong></div>
+    </div>
+    <p class="small">Progreso de tus objetivos diarios</p>
+    <progress id="barra" value="0" max="100"></progress>
+    <p id="mensaje">Cada registro es un paso hacia tu objetivo.</p>
+  </div>
+  <div class="card">
+    <h2>Registrar alimento</h2>
+    <label for="alimento">Selecciona un alimento</label>
+    <select id="alimento"></select>
+    <label for="cantidad">Porciones consumidas</label>
+    <input id="cantidad" type="number" min="0.25" max="30" step="0.25" value="1">
+    <label for="comida">Momento de consumo</label>
+    <select id="comida">
+      <option>Desayuno</option><option>Colación</option><option>Almuerzo</option><option>Antes de entrenar</option><option>Después de entrenar</option><option>Cena</option><option>Otro</option>
+    </select>
+    <button id="guardar">+ Registrar alimento</button>
+    <p class="small">Los valores son estimaciones por porción y deben revisarse con tu pauta nutricional.</p>
+  </div>
+  <div class="card">
+    <h2>Escribir lo que comiste</h2>
+    <textarea id="textoAlimento" rows="3" placeholder="Ej.: comí 2 huevos y 2 rebanadas de pan"></textarea>
+    <button id="interpretar" class="secondary">Revisar texto</button>
+    <div id="resultadoTexto"></div>
+    <p class="small">Este modo propone coincidencias con la lista local; no interpreta automáticamente cualquier alimento. Revisa las cantidades antes de confirmar.</p>
+  </div>
+  <div class="card">
+    <h2>Lo que has registrado</h2>
+    <div id="listaHoy"></div>
+    <button id="cerrarDia" class="secondary">Ver reflexión del día</button>
+    <div id="reflexion" class="hidden"></div>
+  </div>
+</section>
+
+<section id="habitos" class="hidden">
+  <div class="card">
+    <h2>🔥 Tu constancia</h2>
+    <div class="stats">
+      <div class="stat"><span class="small">Racha actual</span><strong id="racha">0 días</strong></div>
+      <div class="stat"><span class="small">Días al 100%</span><strong id="dias100">0</strong></div>
+    </div>
+    <p id="animo">No necesitas hacerlo perfecto para seguir avanzando.</p>
+    <h3>Historial reciente</h3><div id="historial"></div>
+  </div>
+  <div class="card">
+    <h2>🎯 Recuerda tu propósito</h2>
+    <p>¿Qué te motivó a comenzar este camino?</p>
+    <textarea id="proposito" rows="3" placeholder="Ej.: cuidar mi salud, tener energía y disfrutar de mis desafíos deportivos."></textarea>
+    <button id="guardarProposito">Guardar mi propósito</button>
+  </div>
+  <div class="card">
+    <h2>Objetivo diario</h2>
+    <label for="objetivoPorciones">Porciones objetivo</label>
+    <input id="objetivoPorciones" type="number" min="1" max="40" value="10">
+    <button id="guardarObjetivo">Guardar objetivo</button>
+    <p class="small">Configura este valor según tu pauta. El objetivo inicial es solo provisional.</p>
+  </div>
+</section>
+
+<section id="ajustes" class="hidden">
+  <div class="card">
+    <h2>Recordatorios</h2>
+    <p>Configura los horarios que quieres utilizar como referencia.</p>
+    <label for="horaRecordatorio">Hora del recordatorio</label>
+    <input id="horaRecordatorio" type="time" value="20:30">
+    <p class="small">En esta primera versión, guardar el horario no crea todavía una notificación de Android. La incorporaremos mediante Capacitor.</p>
+    <button id="guardarHora">Guardar horario</button>
+  </div>
+  <div class="card">
+    <h2>Respaldo de datos</h2>
+    <p>Exporta tus registros para conservarlos o transferirlos.</p>
+    <div class="actions">
+      <button id="exportar">Exportar respaldo</button>
+      <button id="importarBtn" class="secondary">Importar respaldo</button>
+      <input id="archivo" type="file" accept=".json,application/json" class="hidden">
+    </div>
+    <p id="estadoRespaldo" class="small"></p>
+  </div>
+  <div class="card">
+    <h2>Datos nutricionales</h2>
+    <p class="small">Las calorías y los macronutrientes se incorporarán usando la base de equivalencias de tus documentos. No se debe considerar esta versión como una pauta clínica actualizada.</p>
+  </div>
+</section>
+</main>
+<nav>
+  <button data-seccion="inicio">🏠 Mi día</button>
+  <button data-seccion="habitos">🔥 Hábitos</button>
+  <button data-seccion="ajustes">⚙️ Ajustes</button>
+</nav>
+<script>
+(function(){
+"use strict";
+const $=id=>document.getElementById(id);
+const hoy=()=>{const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
+const alimentos=[
+ {nombre:"Pan (1 porción de cereal)",grupo:"Cereal",kcal:140,p:3,c:30,g:1},
+ {nombre:"Arroz cocido (¾ taza)",grupo:"Cereal",kcal:140,p:3,c:30,g:1},
+ {nombre:"Avena (½ taza)",grupo:"Cereal",kcal:140,p:3,c:30,g:1},
+ {nombre:"Huevo (1 porción proteica)",grupo:"Proteína",kcal:65,p:11,c:1,g:2},
+ {nombre:"Pollo o pescado magro (1 porción)",grupo:"Proteína",kcal:65,p:11,c:1,g:2},
+ {nombre:"Legumbres cocidas (1 porción)",grupo:"Legumbres",kcal:170,p:11,c:30,g:1},
+ {nombre:"Verduras generales (1 porción)",grupo:"Verduras",kcal:25,p:2,c:5,g:0},
+ {nombre:"Verduras de libre consumo (1 porción)",grupo:"Verduras",kcal:10,p:0,c:2.5,g:0},
+ {nombre:"Fruta (1 porción)",grupo:"Fruta",kcal:65,p:1,c:15,g:0},
+ {nombre:"Lácteo bajo en grasa (1 porción)",grupo:"Lácteo",kcal:70,p:7,c:10,g:0},
+ {nombre:"Lácteo medio en grasa (1 porción)",grupo:"Lácteo",kcal:85,p:5,c:9,g:3},
+ {nombre:"Grasa (1 porción)",grupo:"Grasa",kcal:45,p:0,c:0,g:5},
+ {nombre:"Azúcar (1 porción)",grupo:"Azúcar",kcal:20,p:0,c:5,g:0}
+];
+let db={registros:[],historial:{},objetivo:10,proposito:"",hora:"20:30"};
+const clave="miNutricionHabitosV1";
+try{const saved=localStorage.getItem(clave);if(saved){const x=JSON.parse(saved);if(x&&Array.isArray(x.registros)&&x.historial)db={...db,...x}}}catch(e){}
+function guardarDB(){try{localStorage.setItem(clave,JSON.stringify(db))}catch(e){alert("No se pudieron guardar los datos. Exporta un respaldo y revisa el espacio disponible.")}}
+function totalHoy(){return db.registros.filter(r=>r.fecha===hoy()).reduce((s,r)=>s+r.cantidad,0)}
+function resumenHoy(){const n=totalHoy();return Math.min(100,Math.round(n/Math.max(1,Number(db.objetivo)||10)*100))}
+function actualizar(){
+ $("fecha").textContent=new Date().toLocaleDateString("es-CL",{day:"numeric",month:"short"});
+ const rs=db.registros.filter(r=>r.fecha===hoy());
+ const n=totalHoy(),pct=resumenHoy();
+ $("porciones").textContent=Number(n.toFixed(2));
+ $("porcentaje").textContent=pct+"%";$("barra").value=pct;
+ $("mensaje").textContent=pct>=100?"¡Objetivo diario alcanzado! Celebra tu constancia.":pct>=60?"¡Vas avanzando! Cada registro cuenta.":"Un paso a la vez. Registra tus comidas para ver tu progreso.";
+ $("listaHoy").innerHTML=rs.length?rs.map(r=>`<div class="food"><div class="row"><div><strong>${esc(r.nombre)}</strong><div class="small">${esc(r.momento)} · ${r.cantidad} porción(es)</div></div><button class="danger" data-borrar="${r.id}">Quitar</button></div></div>`).join(""):'<p class="small">Aún no has registrado alimentos hoy.</p>';
+ $("listaHoy").querySelectorAll("[data-borrar]").forEach(b=>b.onclick=()=>{db.registros=db.registros.filter(r=>r.id!==b.dataset.borrar);guardarDB();actualizar()});
+ const dias=Object.keys(db.historial).sort().reverse();
+ const perfectos=dias.filter(d=>db.historial[d].pct>=100).length;
+ $("dias100").textContent=perfectos;
+ let racha=0,fecha=new Date();
+ if(db.historial[hoy()]&&db.historial[hoy()].pct>=100){}else fecha.setDate(fecha.getDate()-1);
+ for(let i=0;i<366;i++){const k=fecha.getFullYear()+"-"+String(fecha.getMonth()+1).padStart(2,"0")+"-"+String(fecha.getDate()).padStart(2,"0");if(db.historial[k]&&db.historial[k].pct>=100){racha++;fecha.setDate(fecha.getDate()-1)}else break}
+ $("racha").textContent=racha+" días";
+ $("animo").textContent=racha?`¡Llevas ${racha} día(s) de constancia! Sigue a tu ritmo.`:"Una pausa no borra lo que has avanzado. Siempre puedes retomar.";
+ $("historial").innerHTML=dias.slice(0,14).map(d=>`<div class="food row"><span>${d}</span><span class="badge">${db.historial[d].pct}%</span></div>`).join("")||'<p class="small">Tu historial aparecerá cuando cierres tu primer día.</p>';
+ $("proposito").value=db.proposito||"";$("objetivoPorciones").value=db.objetivo;$("horaRecordatorio").value=db.hora||"20:30";
+}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function llenarAlimentos(){ $("alimento").innerHTML=alimentos.map((a,i)=>`<option value="${i}">${esc(a.nombre)}</option>`).join("")}
+$("guardar").onclick=()=>{
+ const a=alimentos[Number($("alimento").value)],cant=Number($("cantidad").value);
+ if(!a||!Number.isFinite(cant)||cant<=0||cant>30){alert("Ingresa una cantidad válida.");return}
+ db.registros.push({id:Date.now()+"-"+Math.random().toString(36).slice(2),fecha:hoy(),nombre:a.nombre,grupo:a.grupo,cantidad:cant,momento:$("comida").value,kcal:a.kcal*cant,p:a.p*cant,c:a.c*cant,g:a.g*cant});
+ guardarDB();actualizar();$("cantidad").value="1";
+};
+let propuestas=[];
+$("interpretar").onclick=()=>{
+ const texto=$("textoAlimento").value.trim().toLocaleLowerCase("es-CL");
+ if(!texto){$("resultadoTexto").textContent="Escribe primero lo que comiste.";return}
+ propuestas=[];
+ alimentos.forEach((a,i)=>{
+  const palabras=a.nombre.toLocaleLowerCase("es-CL").split(/[ ()/,.-]+/).filter(w=>w.length>3);
+  if(palabras.some(w=>texto.includes(w)))propuestas.push(i);
+ });
+ if(/huevo/.test(texto)&&!propuestas.some(i=>alimentos[i].nombre.includes("Huevo")))propuestas.push(3);
+ if(/pollo|pescado/.test(texto)&&!propuestas.some(i=>alimentos[i].nombre.includes("pollo")))propuestas.push(4);
+ if(/pan/.test(texto)&&!propuestas.includes(0))propuestas.push(0);
+ if(!propuestas.length){$("resultadoTexto").innerHTML='<p>No encontré una coincidencia segura. Registra el alimento desde la lista manual.</p>';return}
+ $("resultadoTexto").innerHTML='<p>Revisa las coincidencias. Aún no se han guardado.</p>'+propuestas.map(i=>`<div class="food"><label><input type="checkbox" data-propuesta="${i}" checked style="width:auto"> ${esc(alimentos[i].nombre)}</label><label>Cantidad <input type="number" min="0.25" max="30" step="0.25" value="1" data-cantidad="${i}"></label></div>`).join("")+'<button id="confirmarTexto">Confirmar selección</button>';
+ $("confirmarTexto").onclick=()=>{
+  const checks=[...$("resultadoTexto").querySelectorAll("[data-propuesta]:checked")];
+  if(!checks.length){alert("Selecciona al menos un alimento.");return}
+  checks.forEach(ch=>{const i=Number(ch.dataset.propuesta),cant=Number($("resultadoTexto").querySelector(`[data-cantidad="${i}"]`).value);if(cant>0&&cant<=30){const a=alimentos[i];db.registros.push({id:Date.now()+"-"+Math.random().toString(36).slice(2),fecha
