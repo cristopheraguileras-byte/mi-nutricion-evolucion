@@ -1,8 +1,0 @@
-{
-  "appId": "cl.minutricion.app",
-  "appName": "Mi Nutrición",
-  "webDir": "www",
-  "server": {
-    "androidScheme": "https"
-  }
-}
